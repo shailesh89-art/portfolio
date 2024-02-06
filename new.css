@@ -1,0 +1,711 @@
+/* Add your styles for the new skill section here */
+/* Responsive Styles */
+
+/* Add any additional styling here */
+
+/* Developer Section Styles */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+ margin:0;
+ padding:0;
+}
+body{
+ font-family:'Roboto',sans-serif;
+  overflow-x:hidden;
+}
+#hire{
+    padding: 0px;
+    margin-top: -78px;
+}
+
+/*for contatc*/
+
+section.contact .container {
+    padding: 4rem 0;
+  }
+  
+  section.contact .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333; /* Adjust text color */
+    font-size: 2rem;
+  }
+  
+  section.contact .card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  section.contact .card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 250px;
+  }
+  
+  section.contact .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  section.contact .card img {
+    width: 100px;
+    margin-bottom: 1.5rem;
+  }
+  
+  section.contact .card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222; /* Adjust text color */
+  }
+  
+  section.contact .card h6 {
+    font-size: 1.2rem;
+    color: #666; /* Adjust text color */
+    margin-bottom: 1.5rem;
+  }
+  
+  section.contact #hire-me {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  section.contact #hire-me button {
+    background-color: #007bff; /* Adjust button color */
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  section.contact #hire-me button:hover {
+    background-color: #0056b3; /* Adjust button hover color */
+  }
+  
+  section.contact #contact-form-container {
+    margin-top: 2rem;
+    display: none;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    section.contact .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  /* Responsive adjustments for contact section */
+@media (max-width: 768px) {
+    section.contact .container {
+        padding: 2rem 0; /* Reduce top and bottom padding */
+    }
+
+    section.contact .section-heading {
+        font-size: 1.5rem; /* Decrease the font size of the heading */
+        margin-bottom: 2rem; /* Reduce bottom margin for heading */
+    }
+
+    section.contact .card-wrapper {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    section.contact .card {
+        max-width: 80%; /* Adjust maximum width of the cards */
+        margin-bottom: 2rem; /* Add space between cards */
+    }
+
+    section.contact #hire-me {
+        margin-top: 3rem; /* Adjust top margin for the "Hire Me" button */
+    }
+
+    section.contact #hire-me button {
+        width: 150px; /* Increase button width for better tapability */
+        font-size: 1.4rem; /* Increase button font size for better visibility */
+    }
+
+    section.contact #contact-form-container {
+        margin-top: 2rem; /* Add margin to the contact form container */
+        display: block; /* Ensure contact form is visible on smaller screens */
+    }
+}
+
+
+/* Footer styles */
+footer {
+    background-color: black;
+    padding: 93px 0;
+    text-align: center;
+}
+
+.social-links {
+    font-size: 24px; /* Adjust the size of the social icons */
+}
+
+.social-links a {
+    color: #333; /* Choose your preferred color for the icons */
+    margin: 0 10px; /* Add margin between each icon */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+  
+
+/*End*/
+/*for project showing*/
+
+
+
+/* Update section.work to section.work-container */
+
+
+section.work-container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container .card-wrapper .card {
+    position: relative;
+    height: 250px;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container p{
+    padding-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container .card-wrapper .card .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container .card-wrapper .card:hover .overlay{
+    opacity: 1;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  
+  /* Update section.work to section.work-container */
+  section.work-container .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+  }
+  
+
+.box {
+    height: 300px;
+    background: 
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #665db5 79.5%, transparent 80%) top left,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at bottom, transparent 79.5%, #314da6 80%) top center,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #7f36ff 79.5%, transparent 80%) top right;
+    -webkit-mask:
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #312654 79.5%, transparent 80%) top left,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at bottom, transparent 79.5%, #8B4513 80%) top center,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #473577 79.5%, transparent 80%) top right;
+    mask:
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #7f59c2 79.5%, transparent 80%) top left,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at bottom, transparent 79.5%, #6a689f 80%) top center,
+      radial-gradient(var(--r1,100%) var(--r2,50%) at top, #5d15a9 79.5%, transparent 80%) top right;
+     /* adjust the 150% to control the covered area, the bigger the value the bigger the area will be*/
+    -webkit-mask-size: 33.4% 150%;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 33.4% 150%;
+    mask-repeat: no-repeat;
+    background-color: #f0f0f0; /* Set a sober color background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.portfolio {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .portfolio {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio {
+        padding: 10px;
+    }
+}
+
+
+nav ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: translateY(-3px); /* Move the text up slightly on hover */
+}
+
+
+nav{
+display:flex;
+background-color:  #b2cfef;
+justify-content: space-around;
+padding:20px 0;
+color:rgb(255, 254, 254);
+
+align-items: center;
+}
+nav.logo{
+letter-spacing: 3px;
+}
+nav ul{
+display:flex;
+list-style: none;
+width:40%;
+justify-content: space-between;
+}
+nav ul li a {
+  color:rgb(255, 254, 254);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.btn{
+border-radius: 40px;
+}
+/*Hamburger */
+.menu-bars{
+display:none;
+flex-direction: column;
+height:20px;
+justify-content: space-between;
+position:relative;
+  z-index:999;
+}
+.menu-bars input{
+position: absolute;
+width:40px;
+height:28px;
+left:-5px;
+top:-3px;
+opacity: 0;
+cursor:pointer;
+z-index: 2;
+}
+
+.menu-bars span{
+display:block;
+width:28px;
+height:3px;
+background-color:rgb(255, 254, 254);
+border-radius: 3px;
+transition: all 0.3s;
+}
+
+.menu-bars span:nth-child(2){
+transform-origin: 0 0 ;
+}
+
+.menu-bars span:nth-child(4){
+  transform-origin: 0 100% ;
+  }
+
+.menu-bars input:checked ~ span:nth-child(2){
+background-color: white;
+transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-bars input:checked ~ span:nth-child(4){
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px,0); 
+  }
+
+  .menu-bars input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0); 
+    }
+
+
+@media only screen and (max-width: 768px){
+nav ul{
+width:50%;
+}
+#developer {
+    background-color: transparent; /* Set the background color to transparent */
+}
+ 
+    .developer-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .developer-image,
+    .developer-info {
+        max-width: 100%; /* Set maximum width to ensure they take up full width */
+    }
+
+    .developer-info {
+        margin-top: 20px; /* Add margin to separate from the image */
+  }
+
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .menu-bars {
+        display: flex; /* Ensure the hamburger menu icon is visible */
+    }
+
+    nav ul {
+        display: none; /* Hide the navbar links */
+    }
+
+    nav .logo {
+        display: none; /* Hide the logo */
+    }
+   
+
+    nav {
+        background-color: transparent; /* Set the background color of the navbar to transparent */
+        height: 0; /* Set the height of the navbar to 0 */
+        padding: 0; /* Remove any padding */
+        overflow: hidden; /* Hide any content overflow */
+    }
+}
+
+    
+  nav ul.slide{
+    transform: translateY(0);
+  }
+
+
+  
+#developer {
+    padding: 20px;
+background-color: #b2cfef;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.developer-image {
+    flex: 1; /* Take 50% of the container */
+    max-width: 50%; /* Adjust as needed */
+    text-align: center;
+}
+
+.developer-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.developer-info {
+    flex: 1; /* Take 50% of the container */
+    max-width: 50%; /* Adjust as needed */
+    padding: 0 20px; /* Add spacing as needed */
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+       
+    }
+
+    .developer-content {
+        margin-top: 20px;
+    }
+
+    .developer-info {
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .services .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services .card-wrapper .card {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+    .services .card-wrapper .card:hover {
+        background-color:  #f78f;
+    }
+}
+
+
+/* Base Styles */
+.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 6rem;
+    grid-column-gap: 2rem;
+}
+
+.services .card-wrapper .card {
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.services .card-wrapper .card img {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services .card-wrapper .card h2 {
+    font: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .card-wrapper .card p {
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+.services .card-wrapper .card:hover {
+    background-color:  #f78f;
+}
+
+.services .card-wrapper .card:hover h2,
+.services .card-wrapper .card:hover p {
+    color: var(--pure);
+}
+
+.services .section-heading {
+    margin-bottom: 10rem;
+}
+
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles specific to the body content */
+section {
+    padding: 6rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 21px 20px;
+}
+
+section.services .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Create side-by-side columns */
+    gap: 3rem; /* Adjust the gap between cards */
+}
+
+section.services .card-wrapper .card {
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all .3s ease;
+    width: 48%; /* Adjust the width of each card for desktop */
+    max-width: 300px; /* Set a max-width for each card */
+}
+
+section.services .card-wrapper .card img {
+    width: 80px; /* Adjust the width of the small image */
+    margin-bottom: 10px; /* Added margin to separate image and text */
+}
+
+section.services .card-wrapper .card h2 {
+    font: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p {
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+.services .section-heading {
+    margin-bottom: 5rem; /* Adjusted margin */
+    text-align: center; /* Center the heading */
+}
+
+@media screen and (max-width: 768px) {
+    section.services .card-wrapper .card {
+        width: 90%; /* Adjust width for mobile responsiveness */
+    }
+    #developer {
+        background-color: transparent; /* Set the background color to transparent */
+        color:  #007bff;
+    }
+    .services .card-wrapper .card:hover
+{
+  background-color: #f78f;
+}
+#fir{
+    color: rgb(103, 226, 183);
+}
+
+    section.services .card-wrapper .card {
+        background: var(--pure);
+        padding: 3rem 2rem;
+        position: relative;
+        padding-top: 6rem;
+        text-align: center;
+        transition: all .3s ease;
+        width: 48%; /* Adjust the width of each card for desktop */
+        max-width: 300px; /* Set a max-width for each card */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+        border-radius: 8px; /* Added border radius */
+    }
+}
+
+
+
+
+.hello {
+    animation: fade 3s infinite; /* Apply the fade animation */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    50% {
+        opacity: 1; /* Fade in to full opacity */
+    }
+    100% {
+        opacity: 0; /* Fade out to 0 opacity */
+    }
+}
+
+

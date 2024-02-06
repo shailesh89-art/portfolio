@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer/seeling Project Screenshots</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image {
+            margin: 10px;
+            max-width: 300px;
+            max-height: 300px;
+            position: relative; /* Ensure relative positioning for text */
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden; /* Hide overflowing image */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover; /* Ensure images cover the entire container */
+        }
+
+        .image .text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Styling for mobile devices */
+        @media only screen and (max-width: 600px) {
+            .gallery {
+                padding: 10px;
+            }
+
+            .image {
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        /* Hover effect */
+        .image:hover {
+            transform: scale(1.05); /* Enlarge on hover */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Add stronger shadow */
+        }
+
+        /* Styling for the zoomed image */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            padding-top: 50px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 800px; /* Max width */
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Close button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <div class="gallery">
+        <div class="image">
+            <span class="text">Realswadeshi-Mart snap - Click that image</span>
+            <img src="img/Project/Screenshot (519).png" alt="Screenshot 1">
+        </div>
+        <div class="image">
+          <span class="text">Realswadeshi-Mart snap - Click that image</span>
+          <img src="img/Project/Screenshot (520).png" alt="Screenshot 1">
+      </div>
+      <div class="image">
+        <span class="text">Realswadeshi-Mart snap - Click that image</span>
+        <img src="img/Project/Screenshot (521).png" alt="Screenshot 1">
+    </div>
+    <div class="image">
+      <span class="text">Realswadeshi-Mart snap - Click that image</span>
+      <img src="img/Project/Screenshot (522).png" alt="Screenshot 1">
+  </div>
+  <div class="image">
+    <span class="text">Realswadeshi-Mart snap - Click that image</span>
+    <img src="img/Project/Screenshot (523).png" alt="Screenshot 1">
+</div>
+<div class="image">
+  <span class="text">Realswadeshi-Mart snap - Click that image</span>
+  <img src="img/Project/Screenshot (524).png" alt="Screenshot 1">
+</div>
+<div class="image">
+  <span class="text">Realswadeshi-Mart snap - Click that image</span>
+  <img src="img/Project/Screenshot (525).png" alt="Screenshot 1">
+</div>
+ 
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var images = document.querySelectorAll('.image img');
+        var modalImg = document.getElementById("modalImg");
+
+        images.forEach(function(image) {
+            image.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        // Close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
